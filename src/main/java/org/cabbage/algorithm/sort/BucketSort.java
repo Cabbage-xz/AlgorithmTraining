@@ -43,7 +43,7 @@ public class BucketSort {
 
     public static void main(String[] args) {
         BucketSort bucketSort = new BucketSort();
-        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1};
+        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1, 12, 234};
         bucketSort.bucketSort(array, 5);
         System.out.println(Arrays.toString(array));
     }

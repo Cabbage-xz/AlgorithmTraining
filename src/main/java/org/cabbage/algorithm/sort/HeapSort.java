@@ -40,13 +40,13 @@ public class HeapSort {
             int temp = array[i];
             array[i] = array[largest];
             array[largest] = temp;
-            // 递归修改受影响的子shu
+            // 递归修改受影响的子树
             heapify(array, length, largest);
         }
     }
     public static void main(String[] args) {
         HeapSort heapSort = new HeapSort();
-        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1};
+        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1, 12, 234};
         heapSort.heapSort(array);
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");

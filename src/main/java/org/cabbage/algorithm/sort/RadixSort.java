@@ -29,7 +29,7 @@ public class RadixSort {
         int[] count = new int[10];
         
         for (int num : array) {
-            count[num / exp]++;
+            count[(num / exp) % 10]++;
         }
         for (int i = 1; i < 10; i++) {
             count[i] += count[i - 1];
@@ -45,7 +45,7 @@ public class RadixSort {
 
     public static void main(String[] args) {
         RadixSort radixSort = new RadixSort();
-        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1};
+        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1, 12, 234};
         radixSort.radixSort(array);
         System.out.println(Arrays.toString(array));
     }

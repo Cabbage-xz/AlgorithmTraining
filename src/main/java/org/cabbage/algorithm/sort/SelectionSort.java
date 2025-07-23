@@ -30,7 +30,7 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         SelectionSort selectionSort = new SelectionSort();
-        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1};
+        int[] array = new int[]{3, 4, 5, 2, 1, 6, 7, 8, 9, 0, 1, 12, 234};
         selectionSort.selectionSort(array);
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
